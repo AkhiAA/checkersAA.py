@@ -7,16 +7,15 @@ def draw_sq(sX, sY, size, color, win):
     square.setFill(color)
     square.draw(win)
    
-
 sqSz = 50
-
+sqCol = "red"
 
 chWin =GraphWin("Checkers", sqSz*10, sqSz*10)
 chWin.setCoords(0, 0, sqSz*10, sqSz*10)
 
 for j in range (8):
     for i in range(8):
-        draw_sq(sqSz * (i + 1), sqSz * (j+1), sqSz, "red", chWin)
+        draw_sq(sqSz * (i + 1), sqSz * (j+1), sqSz, sqCol, chWin)
      
 
 
