@@ -7,13 +7,13 @@ def draw_sq(sX, sY, size, color, win):
     square.setFill(color)
     square.draw(win)
    
-sqSz = 50
-sqCol = "red"
+grCol = input ("What color would you like besides black? >")
+
+sqSz = int(input("What size do you want the checkers to be? >"))
+         
 
 chWin =GraphWin("Checkers", sqSz*10, sqSz*10)
 chWin.setCoords(0, 0, sqSz*10, sqSz*10)
-
-grCol = input ("What color would you like besides black? >")
 
 for j in range (8):
     for i in range(8):
