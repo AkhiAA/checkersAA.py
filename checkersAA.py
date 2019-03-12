@@ -13,12 +13,14 @@ sqCol = "red"
 chWin =GraphWin("Checkers", sqSz*10, sqSz*10)
 chWin.setCoords(0, 0, sqSz*10, sqSz*10)
 
+grCol = input ("What color would you like besides black? >")
+
 for j in range (8):
     for i in range(8):
         if (i + j) % 2 == 0:
             sqCol = "black"
         else:
-            sqCol = "red"
+            sqCol = grCol
         draw_sq(sqSz * (i + 1), sqSz * (j+1), sqSz, sqCol, chWin)
         
 
